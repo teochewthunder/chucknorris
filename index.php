@@ -12,7 +12,7 @@
 	$messages = [];
 	$obj = [];
 	$obj["role"] = "user";
-	$obj["content"] = "Give me a JSON object with one property. The property should be named 'fact'. Its value should be a string. This should be a tech-related Chuck Norris 'fact'. An Example would be 'Chuck Norris can divide by zero.'.";
+	$obj["content"] = "Give me a JSON object with one property. The property should be named 'fact'. Its value should be a string. This should be a Chuck Norris 'fact', relating either to internet, email or software. An Example would be 'Chuck Norris can divide by zero.'.";
 	$messages[] = $obj;
 		
 	$data = [];
@@ -53,7 +53,6 @@
 				background-size: cover;
 				font-size: 60px;
 				font-family: georgia;
-				color: rgb(255, 100, 0);
 				text-shadow: -2px -2px 2px rgb(255, 255, 255), 2px -2px 2px rgb(255, 255, 255), -2px  2px 2px rgb(255, 255, 255), 2px  2px 2px rgb(255, 255, 255);
 			}
 
@@ -68,7 +67,17 @@
 			{
 				width: 20em;
 				float: left;
+				display: none;
 			}
+
+			.rip
+			{
+				font-size: 0.5em;
+				height: 1.5em;
+			    position: fixed;
+			    bottom: 0;
+			    right: 0;
+			}			
 		</style>
 
 		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
@@ -76,7 +85,8 @@
 
 		<script>
 			$(document).ready(function() {
-
+				$( ".number" ).effect( "bounce", { times: 5}, 1000 );
+				$( ".fact" ).fadeIn(5000);
 			});
 		</script>
 	</head>
@@ -85,5 +95,6 @@
 		<div class="number">Fact #<?php echo rand(100, 100000); ?>:</div>
 		<br />
 		<div class="fact"><?php echo $fact; ?></div>
+		<div class="rip">R.I.P 19th March 2026</div>
 	</body>
 </html>
