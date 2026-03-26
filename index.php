@@ -1,7 +1,7 @@
 <?php
 	$key = "xxx";
 	$org = "org-FUOhDblZb1pxvaY6YylF54gl";
-	$url = 'https://api.openai.com/v1/chat/completions';  
+	$url = "https://api.openai.com/v1/chat/completions";  
 
 	$headers = [
 	    "Authorization: Bearer " . $key,
