@@ -15,3 +15,7 @@ This HTML page displays a different tech-related Chuck Norris "fact" with each r
   - `rip` is just a line of text that is fixed on the bottom right side of the screen.
 
 # jQuery / jQuery UI
+- on DOM load
+  - use the jQuey UI effect `bounce` on `number`.
+  - use jQuery method `fadeIn()` on `fact`.
+
