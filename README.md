@@ -1,4 +1,4 @@
-# Chuck Norris Memorial (TBA)
+# Chuck Norris Memorial
 This HTML page displays a different tech-related Chuck Norris "fact" with each reload.
 
 # PHP
